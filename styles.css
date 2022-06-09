@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #a986e9;
+  color: #fff;
+}
+
+.container {
+  width: 300px;
+  background-color: #b17bd7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.15s;
+}
+
+a:hover {
+  opacity: 1;
+}
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 0;
+  overflow: hidden;
+}
+
+.main-title:last-child {
+  padding: 20px 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.img-wrap {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-wrap::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: #fff;
+  top: -50px;
+}
+
+.img-wrap.last::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: #fff;
+  bottom: -50px;
+}
+
+.main-title__icon {
+  max-width: 70%;
+}
+
+.heading {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.section {
+  background-color: #5f5280;
+  margin-top: 30px;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #afa9c0;
+  left: 41px;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 40px;
+  margin: 0;
+  position: relative;
+}
+
+li {
+  margin-left: 20px;
+  padding: 8px 0;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #5f5280;
+  left: -30px;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
